@@ -1,0 +1,8 @@
+def mutate_string(string, position, character):
+    return ''.join([character if i == position else c for i, c in enumerate(string)])
+
+if __name__ == '__main__':
+    s = input()
+    i, c = input().split()
+    s_new = mutate_string(s, int(i), c)
+    print(s_new)
